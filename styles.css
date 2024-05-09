@@ -3,7 +3,7 @@
 /* CSS VARIABLES */
 :root{
     --lt-green: #969696;
-    --md-green: #2f8de6;
+    --md-green: #e67e2f;
     --dk-green: #0b390e;
     --lt-brown: #9c9c9c;
     --md-brown: #6b6b6b;
@@ -45,13 +45,13 @@ body {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 20px;
-    color: #fbb484;
+    color: var(--type);
     display: block;
   }
   
   /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: var(--md-green);
 }
 
 .sidenav img{
@@ -73,7 +73,7 @@ header{
     margin: 0 0 0 10rem;
 
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
+    z-index: 2; /* Stay on top */
     top: 0; /* Stay at the top */
 }
 
@@ -164,8 +164,9 @@ header img{
 
 /* Main Styles */
 
-#intro, #amen, #esc{
+#intro{
     padding: 0 2rem 2rem 2rem;
+    margin: 2rem 5rem 1rem 1rem;
 }
 
 h2{
@@ -181,10 +182,6 @@ main p{
     font-size: 1.5rem;
 }
 
-#intro{
-    margin: 2rem 5rem 1rem 5rem;
-}
-
 #intro h2{
     padding: .5rem 0;
     margin: 0 10rem;
@@ -198,9 +195,8 @@ main p{
 }
 
 #intsid img{
-    width: 15rem;
-    border: 3px solid var(--black);
-	border-radius: .125rem;
+    width: 20rem;
+
 }
 
 #intsid p{
@@ -210,46 +206,20 @@ main p{
 h3{
     font-size: 2rem;
     padding: 1rem;
-    margin: 0 3rem;
+    margin: 3rem 3rem;
 
     color: var(--type);
 	background-color: var(--dk-brown);
-    border: 3px solid var(--black);
+    border: 3px solid var(--dk-brown);
     border-radius: .25rem;
     text-align: center;
 }
 
-.stars{
-    margin: 2rem 0;
-    padding: 20px 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 2rem;
-    justify-items: center;
-    border: 3px solid var(--black);
-    border-radius: .25rem;
 
-    color: var(--black); 
-    background-color: var(--type);
-}
-
-.stars h5{
-    font-size: 1.5rem;
-    padding: 0;
-    margin: 0;
-}
-
-.stars p{
-    font-size: 2rem;
-    padding: 0;
-    margin: 0;
-    color: #2f8de6;
-}
 
 /* Print Works Section */
 
-#works{
+#charas{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -258,42 +228,41 @@ h3{
     align-items: center;
 }
 
-#works h3{
+#charas h3{
     grid-column: 1/-1;
     grid-row: 1/-1;
 }
 
-#works p{
+#charas p{
     padding: 0 1rem;
 }
 
-#works img{
+#charas a{
+    color: var(--type);
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+#charas img{
     border: 3px solid var(--black);
 	border-radius: .125rem;
     width: 22rem; 
     height: 22rem; 
     object-fit: cover;
-    object-position: 35% 35%; 
+    object-position: 10% 10%; 
 }
 
-#works img:hover{
+#charas img:hover{
     border: 3px solid var(--md-green);
     transition: .25s ease;
     position: relative; 
     box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 2px;
 }
 
-#works div{
+#charas div{
     background-color: var(--white);
     padding: 2rem 1rem 1rem 1rem;
     border-radius: 1rem;
-}
-
-.emphasis{
-    font-weight: bold;
-    font-style: italic;
-    font-size: 1.25rem;
-    text-align: center;
 }
 
 /* popups */
@@ -325,21 +294,7 @@ h3{
     z-index: auto;
 }
 
-.modal {
-    position: relative;
-    inset: 0;
-    display: none;
-    align-items: center;
-    justify-content: center;
-}
 
-.content {
-    background: var(--white);
-    padding: 4em 4em;
-    border-radius: 2px;
-    width: 1280px;
-    border: 3px solid var(--black);
-}
 
 #side{
     display: flex;
@@ -350,23 +305,12 @@ h3{
     margin-right: 3rem;
 }
 
-span{
-    font-style: italic;
-    font-weight: 700;
-}
-
-.skills{
-    font-size: 1.75rem;
-}
-
 .content h3{
     margin: 40px;
     font-size: 3rem;
 }
 
-.modal:target {
-    display: flex;
-}
+
 
 #center{
     margin: auto;
@@ -509,4 +453,147 @@ footer div{
     color: var(--white);
 	background-color: var(--dk-brown);
     border: 3px solid var(--white);
+}
+
+
+
+
+
+/* CHARACTER PAGE */
+
+.charagrid{
+    margin: 0 5rem 5rem 5rem;
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    justify-items: center;
+}
+
+.charagrid h4{
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: var(--type);
+    border-bottom: 3px solid var(--type);
+}
+
+.charagrid h5{
+    font-size: 1.75rem;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    color: var(--type);
+}
+
+.charagrid p, li{
+    color: var(--type);
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+span{
+    color: var(--black);
+    background-color: var(--black);
+}
+
+span:hover{
+    transition: .2s;
+    color: var(--type);
+    background-color: var(--black);
+}
+
+span:target{
+    transition: .2s;
+    color: var(--type);
+    background-color: var(--black);
+}
+
+.left{
+    grid-column: 1 / 4;
+    grid-row: -1 / 1;
+}
+
+.right{
+    grid-column: 4 / 6;
+    /* grid-row: 1 / 3; */
+    width: 300px;
+    border: 3px solid var(--type);
+    text-align: center;
+}
+
+.right nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    color: var(--type);
+    margin-top: 0;
+
+    padding: 10px 0;
+    border-bottom: 3px solid var(--type);
+}
+
+.right a{
+    color: var(--type);
+    border: 3px solid var(--white);
+    background-color: none;
+}
+
+.right a:hover{
+    color: var(--black);
+    border: 3px solid var(--white);
+    background-color: var(--md-green);
+}
+
+.right img{
+    border-bottom: 3px solid var(--type);
+    width: 100%;
+}
+
+.right h4{
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0 0 10px 0;
+    border-bottom: 3px solid var(--type);
+}
+
+.right h5{
+    font-size: 1.25rem;
+    margin: 0;
+    padding: 10px 0;
+}
+
+#key ul{
+    padding: 0 2rem 0 2.5rem;
+    text-align: left;
+}
+
+#key li{
+    text-align: left !important;
+}
+
+.right p{
+    padding: 0 1.5rem 15px 1.5rem;
+    text-align: left;
+    border-bottom: 3px solid var(--type);
+}
+
+.figure {
+    position: relative;
+    width: 360px; /* can be omitted for a regular non-lazy image */
+    max-width: 100%;
+}
+
+.figure img#koganpast {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+}
+
+img#koganpast:target {
+    opacity: 1;
 }
