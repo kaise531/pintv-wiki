@@ -9,7 +9,7 @@
     --md-brown: #6b6b6b;
     --dk-brown: #292929;
     --red: #e60808;
-    --white: #d4d4d4;
+    --white: #161616;
     --type: #ffffff;
     --black: #000000;
     --bg: rgba(0, 0, 0, 0.4);
@@ -21,20 +21,71 @@
 /* CSS START */
 
 body {
-    background: /*url("images/forest.svg")*/ var(--lt-green);
+    background: /*url("images/forest.svg")*/ var(--white);
     font-family: var(--fonts);
 	line-height: 1.5;
     padding: 0;
     margin: 0;
 }
 
-header, main, footer{
-    background-color: var(--white);
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 10rem; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+  
+  /* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fbb484;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav img{
+    padding: 0 30px;
+}
+
+.sidenav p{
+    font-size: 20px;
+    color: #818181;
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    background-color: var(--dk-brown);
+
     padding: 1rem 0;
-    width: 100%;
-    max-width: 1400px;
-    margin: auto;
-    border: 3px solid var(--black);
+    width: 91%;
+    margin: 0 0 0 10rem;
+
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+}
+
+main{
+    background-color: var(--white);
+    padding: 4rem 0;
+    width: 91%;
+    margin: 0 0 0 10rem;
+}
+
+p{
+    color: var(--type);
 }
 
 a{
@@ -69,7 +120,7 @@ header div{
 
 h1{
     color: var(--type);
-    font-size: 3.5rem;
+    font-size: 20px;
     width: 500px;
     grid-column: 1/2;
 }
@@ -90,10 +141,10 @@ nav ul{
 nav a{
     color: var(--dk-brown);
 	background-color: var(--white);
-	padding: .75rem;
+	padding: 5px;
 	border: 3px solid var(--black);
 	border-radius: .25rem;
-    font-size: 1.5rem;
+    font-size: 15px;
     font-weight: 600;
 }
 
@@ -199,8 +250,6 @@ h3{
 /* Print Works Section */
 
 #works{
-    background-color: var(--md-brown);
-    border-top: 3px solid var(--black);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -427,6 +476,14 @@ span{
 
 footer{
     background-color: var(--dk-brown);
+
+    padding: 1rem 0;
+    width: 91%;
+    margin: 0 0 0 10rem;
+
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    bottom: 0; /* Stay at the top */
 }
 
 footer p{
@@ -434,7 +491,7 @@ footer p{
     text-align: center;
     margin: auto;
 	font-weight: bold;
-	color: var(--white);
+	color: var(--type);
 }
 
 footer h3{
