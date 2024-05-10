@@ -393,7 +393,7 @@ footer div{
 
 /* CHARACTER PAGE */
 
-.charagrid{
+.pagegrid{
     margin: 0 5rem 5rem 5rem;
     padding: 20px 20px;
     display: grid;
@@ -403,7 +403,7 @@ footer div{
     justify-items: center;
 }
 
-.charagrid h4{
+.pagegrid h4{
     font-size: 2rem;
     margin: 1rem 0;
     color: var(--type);
@@ -415,16 +415,17 @@ footer div{
     font-size: 1rem;
     font-style: italic;
     font-family: var(--p-font);
+    color: var(--type);
 }
 
-.charagrid h5{
+.pagegrid h5{
     font-size: 1.75rem;
     padding: 0;
     margin: 1rem 0 0 0;
     color: var(--type);
 }
 
-.charagrid p, li{
+.pagegrid p, li{
     color: var(--type);
     font-size: 20px;
     padding: 0;
@@ -432,11 +433,11 @@ footer div{
     font-family: var(--p-font);
 }
 
-.charagrid a{
+.pagegrid a{
     color: var(--md-green);
 }
 
-.charagrid a:hover{
+.pagegrid a:hover{
     color: rgb(249, 181, 156);
 }
 
@@ -455,6 +456,12 @@ span:hover{
 .left{
     grid-column: 1 / 4;
     grid-row: -1 / 1;
+}
+
+.left ul{
+    padding: 0 2rem 0 2.5rem;
+    text-align: left;
+    margin: 0;
 }
 
 .right{
