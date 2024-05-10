@@ -284,47 +284,6 @@ h3{
 }
 
 
-
-#center{
-    margin: auto;
-    display: flex;
-    justify-content: center;
-}
-
-#center img:hover{
-    transition: .125s ease;
-    transform: scale(2);
-    z-index: 2;
-}
-
-#single{
-    margin: auto;
-    display: flex;
-    justify-content: center;
-}
-
-#single img{
-    height: auto;
-    width: 65rem;
-}
-
-#single:hover{
-    transition: .125s ease;
-    transform: scale(1.25);
-    z-index: 2;
-}
-
-#nohover{
-    margin: auto;
-    display: flex;
-    justify-content: center;
-}
-
-#nohover img{
-    height: auto;
-    width: 65rem;
-}
-
 .about{
     margin: 2rem 0;
     padding: 20px 20px;
