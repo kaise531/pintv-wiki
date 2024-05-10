@@ -14,7 +14,7 @@
     --black: #000000;
     --bg: rgba(0, 0, 0, 0.4);
 
-    --fonts: 'Montserrat', Arial, sans-serif;    
+    --fonts: 'Special Elite', 'Courier New', monospace;    
     --p-font: 'Montserrat', Arial, sans-serif;
 }
 
@@ -136,6 +136,7 @@ nav ul{
     gap: 1rem;
     padding: 0 0 0 0;
     justify-content: flex-end;
+    font-family: var(--p-font);
 }
 
 nav a{
@@ -267,37 +268,6 @@ h3{
     padding: 2rem 1rem 1rem 1rem;
     border-radius: 1rem;
 }
-
-/* popups */
-
-#extra{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-}
-
-#extra img:hover{
-    transition: .125s ease;
-    transform: scale(2);
-    z-index: 2;
-}
-
-#extra img{
-    /*height: 20rem !important;*/
-    position: relative;
-    z-index: auto;
-}
-
-#popups img{
-    height: 25rem;
-    width: auto;
-    border: 3px solid var(--black);
-	border-radius: .125rem;
-    margin: 5px;
-    z-index: auto;
-}
-
-
 
 #side{
     display: flex;
@@ -485,6 +455,7 @@ footer div{
     display: inline-flex;
     font-size: 1rem;
     font-style: italic;
+    font-family: var(--p-font);
 }
 
 .charagrid h5{
@@ -499,6 +470,7 @@ footer div{
     font-size: 20px;
     padding: 0;
     margin: 0;
+    font-family: var(--p-font);
 }
 
 .charagrid a{
@@ -608,4 +580,5 @@ span:hover{
 
 img#alt-profile:target {
     opacity: 1;
+    background-color: var(--white);
 }
