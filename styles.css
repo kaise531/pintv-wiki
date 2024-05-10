@@ -538,13 +538,13 @@ span:hover{
     font-size: 1.5rem;
     margin: 0;
     padding: 0 0 10px 0;
-    border-bottom: 3px solid var(--type);
 }
 
 .right h5{
     font-size: 1.25rem;
     margin: 0;
     padding: 10px 0;
+    border-top: 3px solid var(--type);
 }
 
 #key ul{
@@ -559,7 +559,6 @@ span:hover{
 .right p{
     padding: 0 1.5rem 15px 1.5rem;
     text-align: left;
-    border-bottom: 3px solid var(--type);
 }
 
 .figure {
