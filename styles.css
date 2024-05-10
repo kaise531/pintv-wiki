@@ -481,6 +481,12 @@ footer div{
     border-bottom: 3px solid var(--type);
 }
 
+#subtitle{
+    display: inline-flex;
+    font-size: 1rem;
+    font-style: italic;
+}
+
 .charagrid h5{
     font-size: 1.75rem;
     padding: 0;
@@ -493,6 +499,14 @@ footer div{
     font-size: 20px;
     padding: 0;
     margin: 0;
+}
+
+.charagrid a{
+    color: var(--md-green);
+}
+
+.charagrid a:hover{
+    color: rgb(249, 181, 156);
 }
 
 span{
@@ -582,7 +596,7 @@ span:hover{
     max-width: 100%;
 }
 
-.figure img#koganpast {
+.figure img#alt-profile {
     position: absolute;
     top: 0;
     right: 0;
@@ -592,6 +606,6 @@ span:hover{
     opacity: 0;
 }
 
-img#koganpast:target {
+img#alt-profile:target {
     opacity: 1;
 }
